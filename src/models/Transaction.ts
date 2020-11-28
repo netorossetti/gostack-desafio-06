@@ -1,10 +1,9 @@
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from "typeorm";
-import AppError from "../errors/AppError";
 import Category from "./Category";
 
 @Entity('transactions')
 class Transaction {
-  @PrimaryGeneratedColumn('uuid')  
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column()
@@ -13,7 +12,7 @@ class Transaction {
   @Column()
   type: 'income' | 'outcome';
 
-  @Column({type:'decimal', scale:2, precision: 16})
+  @Column('decimal')
   value: number;
 
   @Column()

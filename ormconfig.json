@@ -1,9 +1,9 @@
 {
-  "type": "mssql",
+  "type": "postgres",
   "host": "localhost",
-  "port": 53040,
-  "username": "zeus",
-  "password": "zeus",
+  "port": 5432,
+  "username": "postgres",
+  "password": "docker",
   "database": "gostack_desafio06",
   "entities": ["./src/models/*.ts"],
   "migrations": ["./src/database/migrations/*.ts"],
