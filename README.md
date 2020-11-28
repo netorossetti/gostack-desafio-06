@@ -1,5 +1,4 @@
-# gostack_desafio_05
-Desafio 05: Banco de dados e upload de arquivos no Node.js
+# Desafio: Banco de dados e upload de arquivos no Node.js
 
 
 ## 🚀 Sobre o desafio
