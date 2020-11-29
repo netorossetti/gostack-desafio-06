@@ -23,13 +23,17 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "array-callback-return": "off",
     "no-underscore-dangle": "off",
     "prettier/prettier": "off",
     "class-methods-use-this": "off",
     "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/no-unused-vars": ["error", {
-      "argsIgnorePattern": "_"
-    }],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "_"
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",

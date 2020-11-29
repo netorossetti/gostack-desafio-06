@@ -1,4 +1,5 @@
 import { EntityRepository, getRepository, Repository } from 'typeorm';
+import Category from '../models/Category';
 
 import Transaction from '../models/Transaction';
 
@@ -22,6 +23,8 @@ class TransactionsRepository extends Repository<Transaction> {
     balance.total = balance.income - balance.outcome
     return balance
   }
+
+
 }
 
 export default TransactionsRepository;
